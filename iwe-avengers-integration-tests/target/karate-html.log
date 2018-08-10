@@ -1,29 +1,24 @@
-22:29:10.503 karate.env system property was: null 
-22:29:10.893 request:
+22:39:08.459 karate.env system property was: null 
+22:39:08.838 request:
 1 > GET https://mrufr5vffa.execute-api.us-east-2.amazonaws.com/dev/avengers/aaaa-aaaa-aaaa-aaaa
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
 1 > Host: mrufr5vffa.execute-api.us-east-2.amazonaws.com
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
 
-22:29:11.754 response time in milliseconds: 861
-1 < 200
+22:39:09.690 response time in milliseconds: 851
+1 < 500
 1 < Connection: keep-alive
-1 < Content-Length: 91
+1 < Content-Length: 36
 1 < Content-Type: application/json
-1 < Date: Wed, 08 Aug 2018 01:29:11 GMT
-1 < x-amz-apigw-id: LSAYLGcQCYcFXpQ=
-1 < x-amzn-RequestId: 73f4c9d0-9aaa-11e8-b228-03da5be852db
-{
-    id: "aaaa-aaaa-aaaa-aaaa", 
-    name: "Iron Man", 
-    secretIdentity: "Tony Stark"
-}
+1 < Date: Fri, 10 Aug 2018 01:39:09 GMT
+1 < x-amz-apigw-id: LYntnGB-CYcF9Yw=
+1 < x-amzn-RequestId: 2d406459-9c3e-11e8-99b3-e12a65e90973
+{"message": "Internal server error"}
 
-22:29:11.799 karate.env system property was: null 
-22:29:11.804 request:
-1 > POST https://mrufr5vffa.execute-api.us-east-2.amazonaws.com/dev/avengers
-1 > Accept-Encoding: gzip,deflate
+22:39:09.715 status code was: 500, expected: 200, response time: 851, url: https://mrufr5vffa.execute-api.us-east-2.amazonaws.com/dev/avengers/aaaa-aaaa-aaaa-aaaa, response: {"message":"Internal server error"}
+}
+ept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
 1 > Content-Length: 58
 1 > Content-Type: application/json; charset=UTF-8
@@ -31,41 +26,120 @@
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
 {"name":"Captain America","secretIdentity":"Steve Rogers"}
 
-22:29:12.358 response time in milliseconds: 554
+20:00:10.428 response time in milliseconds: 555
 1 < 201
 1 < Connection: keep-alive
-1 < Content-Length: 0
+1 < Content-Length: 49
 1 < Content-Type: application/json
-1 < Date: Wed, 08 Aug 2018 01:29:12 GMT
-1 < x-amz-apigw-id: LSAYRHjZiYcFsFQ=
-1 < x-amzn-RequestId: 7451b60f-9aaa-11e8-95a0-4b10974a403b
+1 < Date: Thu, 09 Aug 2018 23:00:10 GMT
+1 < x-amz-apigw-id: LYQbHEdbiYcFXjQ=
+1 < x-amzn-RequestId: f769709b-9c27-11e8-91fa-a9fca477c0f1
+{
+  "id" : ,
+  "name" : ,
+  "secretIdentity" : 
+}
 
-
-
-22:28:53.375 karate.env system property was: null 
-22:28:53.379 request:
-1 > GET https://mrufr5vffa.execute-api.us-east-2.amazonaws.com/dev/avengers/aaaa-aaaa-aaaa-aaab
+20:00:10.429 json parsing failed, response data type set to string: net.minidev.json.parser.ParseException: Unexpected character (}) at position 48.
+20:00:10.431 assertion failed: path: $, actual: '{
+  "id" : ,
+  "name" : ,
+  "secretIdentity" : 
+}', expected: '{"id":"#string","name":"Captain America","secretIdentity":"Steve Rogers"}', reason: not equal
+20:00:10.443 karate.env system property was: null 
+20:00:10.445 request:
+1 > DELETE https://mrufr5vffa.execute-api.us-east-2.amazonaws.com/dev/avengers/aaaa-aaaa-aaaa-aaaa
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
 1 > Host: mrufr5vffa.execute-api.us-east-2.amazonaws.com
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
 
-22:28:53.899 response time in milliseconds: 520
+20:00:10.996 response time in milliseconds: 550
+1 < 204
+1 < Connection: keep-alive
+1 < Content-Length: 0
+1 < Content-Type: application/json
+1 < Date: Thu, 09 Aug 2018 23:00:10 GMT
+1 < x-amz-apigw-id: LYQbNEI3iYcFa_A=
+1 < x-amzn-RequestId: f7c217d6-9c27-11e8-b8c3-31988a236c0c
+
+20:00:11.005 karate.env system property was: null 
+20:00:11.007 request:
+1 > PUT https://mrufr5vffa.execute-api.us-east-2.amazonaws.com/dev/avengers/aaaa-aaaa-aaaa-aaaa
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 47
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: mrufr5vffa.execute-api.us-east-2.amazonaws.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
+{"name":"Hulk","secretIdentity":"Bruce banner"}
+
+20:00:11.542 response time in milliseconds: 535
 1 < 200
 1 < Connection: keep-alive
-1 < Content-Length: 91
+1 < Content-Length: 49
 1 < Content-Type: application/json
-1 < Date: Wed, 08 Aug 2018 01:28:53 GMT
-1 < x-amz-apigw-id: LSAVYGjYCYcFsdQ=
-1 < x-amzn-RequestId: 6952ec25-9aaa-11e8-bf76-a5a624a14c15
+1 < Date: Thu, 09 Aug 2018 23:00:11 GMT
+1 < x-amz-apigw-id: LYQbSE9zCYcFeiw=
+1 < x-amzn-RequestId: f815dcf9-9c27-11e8-9417-077d10a247f8
 {
-    id: "aaaa-aaaa-aaaa-aaaa", 
-    name: "Iron Man", 
-    secretIdentity: "Tony Stark"
+  "id" : ,
+  "name" : ,
+  "secretIdentity" : 
 }
 
-22:28:53.901 assertion failed: path: $.name, actual: 'Iron Man', expected: 'Captain America', reason: not equal
-et".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+20:00:11.543 json parsing failed, response data type set to string: net.minidev.json.parser.ParseException: Unexpected character (}) at position 48.
+20:00:11.544 assertion failed: path: $, actual: '{
+  "id" : ,
+  "name" : ,
+  "secretIdentity" : 
+}', expected: '{"id":"#string","name":"Hulk","secretIdentity":"Bruce Banner"}', reason: not equal
+19:59:47.144 karate.env system property was: null 
+19:59:47.147 request:
+1 > POST https://mrufr5vffa.execute-api.us-east-2.amazonaws.com/dev/avengers
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 33
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: mrufr5vffa.execute-api.us-east-2.amazonaws.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
+{"secretIdentity":"Steve Rogers"}
+
+19:59:47.667 response time in milliseconds: 519
+1 < 400
+1 < Connection: keep-alive
+1 < Content-Length: 35
+1 < Content-Type: application/json
+1 < Date: Thu, 09 Aug 2018 22:59:47 GMT
+1 < x-amz-apigw-id: LYQXjEy0iYcFttw=
+1 < x-amzn-RequestId: e9d8ff05-9c27-11e8-b44a-dfc161d2fc75
+{"message": "Invalid request body"}
+
+19:59:47.675 karate.env system property was: null 
+19:59:47.679 request:
+1 > POST https://mrufr5vffa.execute-api.us-east-2.amazonaws.com/dev/avengers/aaaa-aaaa-aaaa-aaad
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 33
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: mrufr5vffa.execute-api.us-east-2.amazonaws.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
+{"secretIdentity":"Steve Rogers"}
+
+19:59:48.210 response time in milliseconds: 531
+1 < 403
+1 < Connection: keep-alive
+1 < Content-Length: 42
+1 < Content-Type: application/json
+1 < Date: Thu, 09 Aug 2018 22:59:48 GMT
+1 < x-amz-apigw-id: LYQXpGWuiYcF0bg=
+1 < x-amzn-ErrorType: MissingAuthenticationTokenException
+1 < x-amzn-RequestId: ea2c9d18-9c27-11e8-afa6-7b3700e91799
+{"message":"Missing Authentication Token"}
+
+19:59:48.211 status code was: 403, expected: 400, response time: 531, url: https://mrufr5vffa.execute-api.us-east-2.amazonaws.com/dev/avengers/aaaa-aaaa-aaaa-aaad, response: {"message":"Missing Authentication Token"}
+
+mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
                                 <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
                             
                                 <title>Avengers: Infinity War | Trailer & Official Movie Site | Now Playing</title>

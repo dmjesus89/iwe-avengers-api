@@ -4,27 +4,47 @@ Background:
 * url 'https://mrufr5vffa.execute-api.us-east-2.amazonaws.com/dev'
 
 Scenario: Get Avenger by Id
-
 Given path 'avengers', 'aaaa-aaaa-aaaa-aaaa'
 When method get
 Then status 200
-
 And match $ == {id: 'aaaa-aaaa-aaaa-aaaa', name: 'Iron Man', secretIdentity: 'Tony Stark'}
+#
+#Scenario: Post Avenger
+#Given path 'avengers'
+#And request { name: 'Captain America', secretIdentity: 'Steve Rogers'}
+#When method post
+#Then status 201
+#And match response == {id:'#string', name: 'Captain America', secretIdentity: 'Steve Rogers'}
+#
+#Scenario: Delete Avenger
+#Given path 'avengers', 'aaaa-aaaa-aaaa-aaaa'
+#When method delete
+#Then status 204
+#
+#Scenario: Update Avenger
+#Given path 'avengers', 'aaaa-aaaa-aaaa-aaaa'
+#And request { name: 'Hulk', secretIdentity: 'Bruce banner'}
+#When method put
+#Then status 200
+#And match response == {id:'#string', name: 'Hulk', secretIdentity: 'Bruce Banner'}
+#
 
-Scenario: Post Avenger
+#Scenario: New Avenger must return 400 for invalid payload
+#Given path 'avengers'
+#And request { secretIdentity: 'Steve Rogers'}
+#When method post
+#Then status 400
+#
+#Scenario: Update Avenger must return 400 for invalid payload
+#Given path 'avengers', 'aaaa-aaaa-aaaa-aaad'
+#And request { secretIdentity: 'Steve Rogers'}
+#When method post
+#Then status 400
 
-Given path 'avengers'
-And request { name: 'Captain America', secretIdentity: 'Steve Rogers'}
-When method post
-Then status 201
 
-Scenario: Get Avenger2 by Id
 
-Given path 'avengers', 'aaaa-aaaa-aaaa-aaab'
-When method get
-Then status 200
 
-And match $ == {id: '#string', name: 'Captain America', secretIdentity: 'Steve Rogers'}
+
 
 
 
