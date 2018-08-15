@@ -1,24 +1,26 @@
-22:39:08.459 karate.env system property was: null 
-22:39:08.838 request:
+22:49:26.012 karate.env system property was: null 
+22:49:26.402 request:
 1 > GET https://mrufr5vffa.execute-api.us-east-2.amazonaws.com/dev/avengers/aaaa-aaaa-aaaa-aaaa
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
 1 > Host: mrufr5vffa.execute-api.us-east-2.amazonaws.com
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
 
-22:39:09.690 response time in milliseconds: 851
-1 < 500
+22:49:27.352 response time in milliseconds: 950
+1 < 200
 1 < Connection: keep-alive
-1 < Content-Length: 36
+1 < Content-Length: 76
 1 < Content-Type: application/json
-1 < Date: Fri, 10 Aug 2018 01:39:09 GMT
-1 < x-amz-apigw-id: LYntnGB-CYcF9Yw=
-1 < x-amzn-RequestId: 2d406459-9c3e-11e8-99b3-e12a65e90973
-{"message": "Internal server error"}
+1 < Date: Wed, 15 Aug 2018 01:49:27 GMT
+1 < X-Amzn-Trace-Id: Root=1-5b7386a7-05c7e7ecdec5733403a2f440;Sampled=0
+1 < x-amz-apigw-id: LpH6IH2AiYcF3jw=
+1 < x-amzn-RequestId: 71749b95-a02d-11e8-9c69-3fe8fa2f407b
+{"id":"aaaa-aaaa-aaaa-aaaa","name":"Iron Man","secretIdentity":"Tony Stark"}
 
-22:39:09.715 status code was: 500, expected: 200, response time: 851, url: https://mrufr5vffa.execute-api.us-east-2.amazonaws.com/dev/avengers/aaaa-aaaa-aaaa-aaaa, response: {"message":"Internal server error"}
-}
-ept-Encoding: gzip,deflate
+22:49:27.395 karate.env system property was: null 
+22:49:27.401 request:
+1 > POST https://mrufr5vffa.execute-api.us-east-2.amazonaws.com/dev/avengers
+1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
 1 > Content-Length: 58
 1 > Content-Type: application/json; charset=UTF-8
@@ -26,45 +28,100 @@ ept-Encoding: gzip,deflate
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
 {"name":"Captain America","secretIdentity":"Steve Rogers"}
 
-20:00:10.428 response time in milliseconds: 555
+22:49:27.910 response time in milliseconds: 509
 1 < 201
 1 < Connection: keep-alive
-1 < Content-Length: 49
+1 < Content-Length: 68
 1 < Content-Type: application/json
-1 < Date: Thu, 09 Aug 2018 23:00:10 GMT
-1 < x-amz-apigw-id: LYQbHEdbiYcFXjQ=
-1 < x-amzn-RequestId: f769709b-9c27-11e8-91fa-a9fca477c0f1
-{
-  "id" : ,
-  "name" : ,
-  "secretIdentity" : 
-}
+1 < Date: Wed, 15 Aug 2018 01:49:27 GMT
+1 < X-Amzn-Trace-Id: Root=1-5b7386a7-1b06025cbccda5e83cbdc85a;Sampled=0
+1 < x-amz-apigw-id: LpH6NH0yCYcFd1g=
+1 < x-amzn-RequestId: 71ca35af-a02d-11e8-9045-c53f848883f2
+{"id":"49","name":"Captain America","secretIdentity":"Steve Rogers"}
 
-20:00:10.429 json parsing failed, response data type set to string: net.minidev.json.parser.ParseException: Unexpected character (}) at position 48.
-20:00:10.431 assertion failed: path: $, actual: '{
-  "id" : ,
-  "name" : ,
-  "secretIdentity" : 
-}', expected: '{"id":"#string","name":"Captain America","secretIdentity":"Steve Rogers"}', reason: not equal
-20:00:10.443 karate.env system property was: null 
-20:00:10.445 request:
+22:49:27.923 karate.env system property was: null 
+22:49:27.925 request:
+1 > POST https://mrufr5vffa.execute-api.us-east-2.amazonaws.com/dev/avengers
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 58
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: mrufr5vffa.execute-api.us-east-2.amazonaws.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
+{"name":"Captain America","secretIdentity":"Steve Rogers"}
+
+22:49:28.444 response time in milliseconds: 519
+1 < 201
+1 < Connection: keep-alive
+1 < Content-Length: 68
+1 < Content-Type: application/json
+1 < Date: Wed, 15 Aug 2018 01:49:28 GMT
+1 < X-Amzn-Trace-Id: Root=1-5b7386a8-1b82b066d007fee84a852072;Sampled=0
+1 < x-amz-apigw-id: LpH6TGhxiYcFWXQ=
+1 < x-amzn-RequestId: 721c271d-a02d-11e8-990d-0d909c2bf409
+{"id":"50","name":"Captain America","secretIdentity":"Steve Rogers"}
+
+22:49:28.454 karate.env system property was: null 
+22:49:28.457 request:
 1 > DELETE https://mrufr5vffa.execute-api.us-east-2.amazonaws.com/dev/avengers/aaaa-aaaa-aaaa-aaaa
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
 1 > Host: mrufr5vffa.execute-api.us-east-2.amazonaws.com
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
 
-20:00:10.996 response time in milliseconds: 550
-1 < 204
+22:49:28.990 response time in milliseconds: 533
+1 < 404
 1 < Connection: keep-alive
-1 < Content-Length: 0
+1 < Content-Length: 326
 1 < Content-Type: application/json
-1 < Date: Thu, 09 Aug 2018 23:00:10 GMT
-1 < x-amz-apigw-id: LYQbNEI3iYcFa_A=
-1 < x-amzn-RequestId: f7c217d6-9c27-11e8-b8c3-31988a236c0c
+1 < Date: Wed, 15 Aug 2018 01:49:28 GMT
+1 < X-Amzn-Trace-Id: Root=1-5b7386a8-a8c6ba0bbeea93df94934513;Sampled=0
+1 < x-amz-apigw-id: LpH6YEqaiYcFiFg=
+1 < x-amzn-RequestId: 726e3df9-a02d-11e8-9efa-f3ad1dbc5924
+{"errorMessage":"[NotFound] - Avender id:aaaa-aaaa-aaaa-aaaanot found ","errorType":"com.iwe.avenger.lambda.exception.AvengerNotFoundException","stackTrace":["com.iwe.avengers.RemoveAvengerHandler.handleRequest(RemoveAvengerHandler.java:24)","com.iwe.avengers.RemoveAvengerHandler.handleRequest(RemoveAvengerHandler.java:1)"]}
 
-20:00:11.005 karate.env system property was: null 
-20:00:11.007 request:
+22:49:28.991 status code was: 404, expected: 204, response time: 533, url: https://mrufr5vffa.execute-api.us-east-2.amazonaws.com/dev/avengers/aaaa-aaaa-aaaa-aaaa, response: {"errorMessage":"[NotFound] - Avender id:aaaa-aaaa-aaaa-aaaanot found ","errorType":"com.iwe.avenger.lambda.exception.AvengerNotFoundException","stackTrace":["com.iwe.avengers.RemoveAvengerHandler.handleRequest(RemoveAvengerHandler.java:24)","com.iwe.avengers.RemoveAvengerHandler.handleRequest(RemoveAvengerHandler.java:1)"]}
+22:49:29.005 karate.env system property was: null 
+22:49:29.010 request:
+1 > GET https://mrufr5vffa.execute-api.us-east-2.amazonaws.com/dev/avengers/aaaa-aaaa-aaaa-aaaa
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: mrufr5vffa.execute-api.us-east-2.amazonaws.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
+
+22:49:29.530 response time in milliseconds: 520
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 76
+1 < Content-Type: application/json
+1 < Date: Wed, 15 Aug 2018 01:49:29 GMT
+1 < X-Amzn-Trace-Id: Root=1-5b7386a9-32f0ad14e99a729bfa022b4b;Sampled=0
+1 < x-amz-apigw-id: LpH6eGSyiYcFgbQ=
+1 < x-amzn-RequestId: 72c27931-a02d-11e8-a7db-138cf5c59856
+{"id":"aaaa-aaaa-aaaa-aaaa","name":"Iron Man","secretIdentity":"Tony Stark"}
+
+22:49:29.531 status code was: 200, expected: 404, response time: 520, url: https://mrufr5vffa.execute-api.us-east-2.amazonaws.com/dev/avengers/aaaa-aaaa-aaaa-aaaa, response: {"id":"aaaa-aaaa-aaaa-aaaa","name":"Iron Man","secretIdentity":"Tony Stark"}
+22:49:29.540 karate.env system property was: null 
+22:49:29.544 request:
+1 > DELETE https://mrufr5vffa.execute-api.us-east-2.amazonaws.com/dev/avengers/invalid
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: mrufr5vffa.execute-api.us-east-2.amazonaws.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
+
+22:49:30.069 response time in milliseconds: 525
+1 < 404
+1 < Connection: keep-alive
+1 < Content-Length: 314
+1 < Content-Type: application/json
+1 < Date: Wed, 15 Aug 2018 01:49:29 GMT
+1 < X-Amzn-Trace-Id: Root=1-5b7386a9-af217a2c23054e08ff944fec;Sampled=0
+1 < x-amz-apigw-id: LpH6jEWfCYcFwFw=
+1 < x-amzn-RequestId: 7312e2aa-a02d-11e8-9c17-b5ef901f7ac8
+{"errorMessage":"[NotFound] - Avender id:invalidnot found ","errorType":"com.iwe.avenger.lambda.exception.AvengerNotFoundException","stackTrace":["com.iwe.avengers.RemoveAvengerHandler.handleRequest(RemoveAvengerHandler.java:24)","com.iwe.avengers.RemoveAvengerHandler.handleRequest(RemoveAvengerHandler.java:1)"]}
+
+22:49:30.083 karate.env system property was: null 
+22:49:30.085 request:
 1 > PUT https://mrufr5vffa.execute-api.us-east-2.amazonaws.com/dev/avengers/aaaa-aaaa-aaaa-aaaa
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
@@ -74,28 +131,54 @@ ept-Encoding: gzip,deflate
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
 {"name":"Hulk","secretIdentity":"Bruce banner"}
 
-20:00:11.542 response time in milliseconds: 535
+22:49:30.576 response time in milliseconds: 491
 1 < 200
 1 < Connection: keep-alive
 1 < Content-Length: 49
 1 < Content-Type: application/json
-1 < Date: Thu, 09 Aug 2018 23:00:11 GMT
-1 < x-amz-apigw-id: LYQbSE9zCYcFeiw=
-1 < x-amzn-RequestId: f815dcf9-9c27-11e8-9417-077d10a247f8
+1 < Date: Wed, 15 Aug 2018 01:49:30 GMT
+1 < x-amz-apigw-id: LpH6oGRhCYcFfgw=
+1 < x-amzn-RequestId: 736325f6-a02d-11e8-a7e7-63c38a5dfcd6
 {
   "id" : ,
   "name" : ,
   "secretIdentity" : 
 }
 
-20:00:11.543 json parsing failed, response data type set to string: net.minidev.json.parser.ParseException: Unexpected character (}) at position 48.
-20:00:11.544 assertion failed: path: $, actual: '{
+22:49:30.577 json parsing failed, response data type set to string: net.minidev.json.parser.ParseException: Unexpected character (}) at position 48.
+22:49:30.585 karate.env system property was: null 
+22:49:30.588 request:
+1 > PUT https://mrufr5vffa.execute-api.us-east-2.amazonaws.com/dev/avengers/aaaa-aaaa-aaaa-aaaa
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 47
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: mrufr5vffa.execute-api.us-east-2.amazonaws.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
+{"name":"Hulk","secretIdentity":"Bruce banner"}
+
+22:49:31.094 response time in milliseconds: 505
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 49
+1 < Content-Type: application/json
+1 < Date: Wed, 15 Aug 2018 01:49:30 GMT
+1 < x-amz-apigw-id: LpH6tHesiYcFogQ=
+1 < x-amzn-RequestId: 73b2cc27-a02d-11e8-a4bc-3d2dadd220c5
+{
   "id" : ,
   "name" : ,
   "secretIdentity" : 
-}', expected: '{"id":"#string","name":"Hulk","secretIdentity":"Bruce Banner"}', reason: not equal
-19:59:47.144 karate.env system property was: null 
-19:59:47.147 request:
+}
+
+22:49:31.094 json parsing failed, response data type set to string: net.minidev.json.parser.ParseException: Unexpected character (}) at position 48.
+22:49:31.095 status code was: 200, expected: 404, response time: 505, url: https://mrufr5vffa.execute-api.us-east-2.amazonaws.com/dev/avengers/aaaa-aaaa-aaaa-aaaa, response: {
+  "id" : ,
+  "name" : ,
+  "secretIdentity" : 
+}
+22:49:31.103 karate.env system property was: null 
+22:49:31.105 request:
 1 > POST https://mrufr5vffa.execute-api.us-east-2.amazonaws.com/dev/avengers
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
@@ -105,18 +188,18 @@ ept-Encoding: gzip,deflate
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
 {"secretIdentity":"Steve Rogers"}
 
-19:59:47.667 response time in milliseconds: 519
+22:49:31.685 response time in milliseconds: 580
 1 < 400
 1 < Connection: keep-alive
 1 < Content-Length: 35
 1 < Content-Type: application/json
-1 < Date: Thu, 09 Aug 2018 22:59:47 GMT
-1 < x-amz-apigw-id: LYQXjEy0iYcFttw=
-1 < x-amzn-RequestId: e9d8ff05-9c27-11e8-b44a-dfc161d2fc75
+1 < Date: Wed, 15 Aug 2018 01:49:31 GMT
+1 < x-amz-apigw-id: LpH6zEnYCYcFl4w=
+1 < x-amzn-RequestId: 7408dbe0-a02d-11e8-aa1b-cbb017b87f43
 {"message": "Invalid request body"}
 
-19:59:47.675 karate.env system property was: null 
-19:59:47.679 request:
+22:49:31.693 karate.env system property was: null 
+22:49:31.698 request:
 1 > POST https://mrufr5vffa.execute-api.us-east-2.amazonaws.com/dev/avengers/aaaa-aaaa-aaaa-aaad
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
@@ -126,77 +209,37 @@ ept-Encoding: gzip,deflate
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
 {"secretIdentity":"Steve Rogers"}
 
-19:59:48.210 response time in milliseconds: 531
+22:49:32.193 response time in milliseconds: 495
 1 < 403
 1 < Connection: keep-alive
 1 < Content-Length: 42
 1 < Content-Type: application/json
-1 < Date: Thu, 09 Aug 2018 22:59:48 GMT
-1 < x-amz-apigw-id: LYQXpGWuiYcF0bg=
+1 < Date: Wed, 15 Aug 2018 01:49:32 GMT
+1 < x-amz-apigw-id: LpH64HgNCYcFnzA=
 1 < x-amzn-ErrorType: MissingAuthenticationTokenException
-1 < x-amzn-RequestId: ea2c9d18-9c27-11e8-afa6-7b3700e91799
+1 < x-amzn-RequestId: 745aa52d-a02d-11e8-91f8-1702f47d9339
 {"message":"Missing Authentication Token"}
 
-19:59:48.211 status code was: 403, expected: 400, response time: 531, url: https://mrufr5vffa.execute-api.us-east-2.amazonaws.com/dev/avengers/aaaa-aaaa-aaaa-aaad, response: {"message":"Missing Authentication Token"}
+22:49:32.201 karate.env system property was: null 
+22:49:32.203 request:
+1 > GET https://mrufr5vffa.execute-api.us-east-2.amazonaws.com/dev/avengers/invalid
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: mrufr5vffa.execute-api.us-east-2.amazonaws.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
 
-mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
-                                <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-                            
-                                <title>Avengers: Infinity War | Trailer & Official Movie Site | Now Playing</title>
-                                <meta name="title" content="Avengers: Infinity War | Trailer & Official Movie Site">
-                                <meta name="description" content="Avengers: Infinity War | Trailer & Official Movie Site">
-                                
-                                <meta name="og:title" content="Avengers: Infinity War | Trailer & Official Movie Site">
-                                <meta property="og:type" content="video.movie">
-                                <meta property="og:url" content="http://www.marvel.com/avengers">
-                                <meta property="og:title" content="Avengers: Infinity War">
-                                <meta property="og:description" content="As Avengers and their allies have continued to protect the world from threats too large for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos. A despot of intergalactic infamy, his goal is to collect all six Infinity ...">
-                                <meta property="og:site_name" content="Avengers: Infinity War">
-                            
-                                <meta name="twitter:card" content="summary_large_image">
-                                <meta name="twitter:site" content="@Marvel">
-                                <meta name="twitter:title" content="Avengers: Infinity War">
-                                <meta name="twitter:description" content="As Avengers and their allies have continued to protect the world from threats too large for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos. A despot of intergalactic infamy, his goal is to collect all six Infinity ...">
-                                <meta name="twitter:url" content="http://www.marvel.com/avengers">
-                                <meta name="twitter:domain" content="http://www.marvel.com">
-                                
-                                <base href="https://i.annihil.us/u/prod/marvel/movies/infinitywar/">
-                            
-                            <meta property="og:image" content="https://i.annihil.us/u/prod/marvel/movies/infinitywar/images/share.jpg">
-                            <meta name="twitter:image" content="https://i.annihil.us/u/prod/marvel/movies/infinitywar/images/share.jpg">
-                            <link rel="canonical" href="http://www.marvel.com/avengers">
-                            <link rel="image_src" type="image/jpeg" href="https://i.annihil.us/u/prod/marvel/movies/infinitywar/images/share.jpg">
-                            <link rel="shortcut icon" href="https://i.annihil.us/u/prod/marvel/movies/infinitywar/images/favicon.png">
-                                <link href="https://i.annihil.us/u/prod/marvel/s/css/30bd8023a0bd2ea1d18368e8e4dde32a.css" rel="stylesheet">
-                                <link href="https://i.annihil.us/u/prod/marvel/s/css/7e78dc308009667c6467c52cd317b7ce.css" rel="stylesheet">
-                                <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,900i" rel="stylesheet">
-                                <script type="text/javascript">
-                                  var SITE = SITE || {};
-                                  SITE.dom = '';
-                                </script>
-                                <script type="text/javascript" src="//marvel.com/i/js/marvel-widgets.js"></script>
-                                <script type="text/javascript">
-                                  var URLs = {
-                                  	'login': 'https://secure.marvel.com/user/login?referer=http%3A%2F%2Fmarvel.com%2Favengers',
-                                  	'signup': 'https://secure.marvel.com/user/register?referer=http%3A%2F%2Fmarvel.com%2Favengers',
-                                  	'comicReader': 'https://reader.marvel.com/#/issue/',
-                                  	'rpxWidgetUrl': 'https://widget-cdn.rpxnow.com/js/lib/forge.marvel.com/widget.js',
-                                  	'rpxWidgetUrlSecure': 'https://rpxnow.com/js/lib/forge.marvel.com/widget.js'
-                                  };
-                                  MarvelWidgets.init({
-                                  	home_url: "https://www.marvel.com/avengers",
-                                  	current_section: "movies",
-                                  	staging: "https://marvel.com",
-                                  	targets: {
-                                  		topnav: "marvelMenu"
-                                  	},
-                                  	settings: {
-                                  		exclude_search: true,
-                                  		exclude_login: true,
-                                  		small_nav: true,
-                                  		responsive: true,
-                                  		version: 2
-                                  	}
+22:49:32.740 response time in milliseconds: 537
+1 < 404
+1 < Connection: keep-alive
+1 < Content-Length: 318
+1 < Content-Type: application/json
+1 < Date: Wed, 15 Aug 2018 01:49:32 GMT
+1 < X-Amzn-Trace-Id: Root=1-5b7386ac-baff51ce4dabf40a893d557a;Sampled=0
+1 < x-amz-apigw-id: LpH6-HzmCYcFsvQ=
+1 < x-amzn-RequestId: 74a8ebe9-a02d-11e8-8084-6191b3ab6d6b
+{"errorMessage":"[NotFound] - Avender id:invalidnot found ","errorType":"com.iwe.avenger.lambda.exception.AvengerNotFoundException","stackTrace":["com.iwe.avengers.SearchAvengersHandler.handleRequest(SearchAvengersHandler.java:27)","com.iwe.avengers.SearchAvengersHandler.handleRequest(SearchAvengersHandler.java:1)"]}
+
+
                                   });
                                 </script>
                                 <link rel="stylesheet" type="text/css" href="css/main.css">
