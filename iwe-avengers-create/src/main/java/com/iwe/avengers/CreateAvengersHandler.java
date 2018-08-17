@@ -8,14 +8,12 @@ import com.iwe.avengers.dao.AvengerDAO;
 
 public class CreateAvengersHandler implements RequestHandler<Avenger, HandlerResponse> {
 	
-	private AvengerDAO dao = new AvengerDAO();
+	private AvengerDAO dao;
 
 	@Override
 	public HandlerResponse handleRequest(final Avenger newAvenger, final Context context) {
 
-		context.getLogger().log("[#] - Searching Avenger with id: " + newAvenger);
-		
-		context.getLogger().log( newAvenger.toString());
+		context.getLogger().log("[#] - Creating Avenger with : \n" + newAvenger.toString());
 		
 		final Avenger saveddAvenger = dao.save(newAvenger);
 		
