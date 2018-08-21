@@ -1,24 +1,24 @@
-22:49:26.012 karate.env system property was: null 
-22:49:26.402 request:
+21:41:39.214 karate.env system property was: null 
+21:41:39.670 request:
 1 > GET https://mrufr5vffa.execute-api.us-east-2.amazonaws.com/dev/avengers/aaaa-aaaa-aaaa-aaaa
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
 1 > Host: mrufr5vffa.execute-api.us-east-2.amazonaws.com
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
 
-22:49:27.352 response time in milliseconds: 950
-1 < 200
+21:41:41.814 response time in milliseconds: 2144
+1 < 500
 1 < Connection: keep-alive
-1 < Content-Length: 76
+1 < Content-Length: 36
 1 < Content-Type: application/json
-1 < Date: Wed, 15 Aug 2018 01:49:27 GMT
-1 < X-Amzn-Trace-Id: Root=1-5b7386a7-05c7e7ecdec5733403a2f440;Sampled=0
-1 < x-amz-apigw-id: LpH6IH2AiYcF3jw=
-1 < x-amzn-RequestId: 71749b95-a02d-11e8-9c69-3fe8fa2f407b
-{"id":"aaaa-aaaa-aaaa-aaaa","name":"Iron Man","secretIdentity":"Tony Stark"}
+1 < Date: Fri, 17 Aug 2018 00:41:41 GMT
+1 < x-amz-apigw-id: Lvj25GYTiYcFsUw=
+1 < x-amzn-RequestId: 4f0be6ff-a1b6-11e8-a3a4-d54cf977309d
+{"message": "Internal server error"}
 
-22:49:27.395 karate.env system property was: null 
-22:49:27.401 request:
+21:41:41.839 status code was: 500, expected: 200, response time: 2144, url: https://mrufr5vffa.execute-api.us-east-2.amazonaws.com/dev/avengers/aaaa-aaaa-aaaa-aaaa, response: {"message":"Internal server error"}
+21:41:41.867 karate.env system property was: null 
+21:41:41.880 request:
 1 > POST https://mrufr5vffa.execute-api.us-east-2.amazonaws.com/dev/avengers
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
@@ -28,19 +28,19 @@
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
 {"name":"Captain America","secretIdentity":"Steve Rogers"}
 
-22:49:27.910 response time in milliseconds: 509
-1 < 201
+21:41:42.403 response time in milliseconds: 523
+1 < 500
 1 < Connection: keep-alive
-1 < Content-Length: 68
+1 < Content-Length: 36
 1 < Content-Type: application/json
-1 < Date: Wed, 15 Aug 2018 01:49:27 GMT
-1 < X-Amzn-Trace-Id: Root=1-5b7386a7-1b06025cbccda5e83cbdc85a;Sampled=0
-1 < x-amz-apigw-id: LpH6NH0yCYcFd1g=
-1 < x-amzn-RequestId: 71ca35af-a02d-11e8-9045-c53f848883f2
-{"id":"49","name":"Captain America","secretIdentity":"Steve Rogers"}
+1 < Date: Fri, 17 Aug 2018 00:41:42 GMT
+1 < x-amz-apigw-id: Lvj2_HnSiYcFzNQ=
+1 < x-amzn-RequestId: 4f6726ec-a1b6-11e8-89b9-b993f344c7fb
+{"message": "Internal server error"}
 
-22:49:27.923 karate.env system property was: null 
-22:49:27.925 request:
+21:41:42.404 status code was: 500, expected: 201, response time: 523, url: https://mrufr5vffa.execute-api.us-east-2.amazonaws.com/dev/avengers, response: {"message":"Internal server error"}
+21:41:42.414 karate.env system property was: null 
+21:41:42.417 request:
 1 > POST https://mrufr5vffa.execute-api.us-east-2.amazonaws.com/dev/avengers
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
@@ -50,78 +50,76 @@
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
 {"name":"Captain America","secretIdentity":"Steve Rogers"}
 
-22:49:28.444 response time in milliseconds: 519
-1 < 201
+21:41:42.929 response time in milliseconds: 512
+1 < 500
 1 < Connection: keep-alive
-1 < Content-Length: 68
+1 < Content-Length: 36
 1 < Content-Type: application/json
-1 < Date: Wed, 15 Aug 2018 01:49:28 GMT
-1 < X-Amzn-Trace-Id: Root=1-5b7386a8-1b82b066d007fee84a852072;Sampled=0
-1 < x-amz-apigw-id: LpH6TGhxiYcFWXQ=
-1 < x-amzn-RequestId: 721c271d-a02d-11e8-990d-0d909c2bf409
-{"id":"50","name":"Captain America","secretIdentity":"Steve Rogers"}
+1 < Date: Fri, 17 Aug 2018 00:41:42 GMT
+1 < x-amz-apigw-id: Lvj3EE5lCYcFvQw=
+1 < x-amzn-RequestId: 4fb93e11-a1b6-11e8-89a6-0701f7e31e15
+{"message": "Internal server error"}
 
-22:49:28.454 karate.env system property was: null 
-22:49:28.457 request:
+21:41:42.930 status code was: 500, expected: 201, response time: 512, url: https://mrufr5vffa.execute-api.us-east-2.amazonaws.com/dev/avengers, response: {"message":"Internal server error"}
+21:41:42.941 karate.env system property was: null 
+21:41:42.945 request:
 1 > DELETE https://mrufr5vffa.execute-api.us-east-2.amazonaws.com/dev/avengers/aaaa-aaaa-aaaa-aaaa
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
 1 > Host: mrufr5vffa.execute-api.us-east-2.amazonaws.com
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
 
-22:49:28.990 response time in milliseconds: 533
-1 < 404
+21:41:43.477 response time in milliseconds: 532
+1 < 500
 1 < Connection: keep-alive
-1 < Content-Length: 326
+1 < Content-Length: 36
 1 < Content-Type: application/json
-1 < Date: Wed, 15 Aug 2018 01:49:28 GMT
-1 < X-Amzn-Trace-Id: Root=1-5b7386a8-a8c6ba0bbeea93df94934513;Sampled=0
-1 < x-amz-apigw-id: LpH6YEqaiYcFiFg=
-1 < x-amzn-RequestId: 726e3df9-a02d-11e8-9efa-f3ad1dbc5924
-{"errorMessage":"[NotFound] - Avender id:aaaa-aaaa-aaaa-aaaanot found ","errorType":"com.iwe.avenger.lambda.exception.AvengerNotFoundException","stackTrace":["com.iwe.avengers.RemoveAvengerHandler.handleRequest(RemoveAvengerHandler.java:24)","com.iwe.avengers.RemoveAvengerHandler.handleRequest(RemoveAvengerHandler.java:1)"]}
+1 < Date: Fri, 17 Aug 2018 00:41:43 GMT
+1 < x-amz-apigw-id: Lvj3JGcWCYcF9yg=
+1 < x-amzn-RequestId: 500b55fb-a1b6-11e8-bada-4f6d84c2d1a1
+{"message": "Internal server error"}
 
-22:49:28.991 status code was: 404, expected: 204, response time: 533, url: https://mrufr5vffa.execute-api.us-east-2.amazonaws.com/dev/avengers/aaaa-aaaa-aaaa-aaaa, response: {"errorMessage":"[NotFound] - Avender id:aaaa-aaaa-aaaa-aaaanot found ","errorType":"com.iwe.avenger.lambda.exception.AvengerNotFoundException","stackTrace":["com.iwe.avengers.RemoveAvengerHandler.handleRequest(RemoveAvengerHandler.java:24)","com.iwe.avengers.RemoveAvengerHandler.handleRequest(RemoveAvengerHandler.java:1)"]}
-22:49:29.005 karate.env system property was: null 
-22:49:29.010 request:
+21:41:43.478 status code was: 500, expected: 204, response time: 532, url: https://mrufr5vffa.execute-api.us-east-2.amazonaws.com/dev/avengers/aaaa-aaaa-aaaa-aaaa, response: {"message":"Internal server error"}
+21:41:43.492 karate.env system property was: null 
+21:41:43.499 request:
 1 > GET https://mrufr5vffa.execute-api.us-east-2.amazonaws.com/dev/avengers/aaaa-aaaa-aaaa-aaaa
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
 1 > Host: mrufr5vffa.execute-api.us-east-2.amazonaws.com
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
 
-22:49:29.530 response time in milliseconds: 520
-1 < 200
+21:41:44.025 response time in milliseconds: 526
+1 < 500
 1 < Connection: keep-alive
-1 < Content-Length: 76
+1 < Content-Length: 36
 1 < Content-Type: application/json
-1 < Date: Wed, 15 Aug 2018 01:49:29 GMT
-1 < X-Amzn-Trace-Id: Root=1-5b7386a9-32f0ad14e99a729bfa022b4b;Sampled=0
-1 < x-amz-apigw-id: LpH6eGSyiYcFgbQ=
-1 < x-amzn-RequestId: 72c27931-a02d-11e8-a7db-138cf5c59856
-{"id":"aaaa-aaaa-aaaa-aaaa","name":"Iron Man","secretIdentity":"Tony Stark"}
+1 < Date: Fri, 17 Aug 2018 00:41:43 GMT
+1 < x-amz-apigw-id: Lvj3PH0yiYcFW9w=
+1 < x-amzn-RequestId: 505ecd7a-a1b6-11e8-b4da-6f4ec9380244
+{"message": "Internal server error"}
 
-22:49:29.531 status code was: 200, expected: 404, response time: 520, url: https://mrufr5vffa.execute-api.us-east-2.amazonaws.com/dev/avengers/aaaa-aaaa-aaaa-aaaa, response: {"id":"aaaa-aaaa-aaaa-aaaa","name":"Iron Man","secretIdentity":"Tony Stark"}
-22:49:29.540 karate.env system property was: null 
-22:49:29.544 request:
+21:41:44.026 status code was: 500, expected: 404, response time: 526, url: https://mrufr5vffa.execute-api.us-east-2.amazonaws.com/dev/avengers/aaaa-aaaa-aaaa-aaaa, response: {"message":"Internal server error"}
+21:41:44.034 karate.env system property was: null 
+21:41:44.038 request:
 1 > DELETE https://mrufr5vffa.execute-api.us-east-2.amazonaws.com/dev/avengers/invalid
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
 1 > Host: mrufr5vffa.execute-api.us-east-2.amazonaws.com
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
 
-22:49:30.069 response time in milliseconds: 525
-1 < 404
+21:41:44.547 response time in milliseconds: 509
+1 < 500
 1 < Connection: keep-alive
-1 < Content-Length: 314
+1 < Content-Length: 36
 1 < Content-Type: application/json
-1 < Date: Wed, 15 Aug 2018 01:49:29 GMT
-1 < X-Amzn-Trace-Id: Root=1-5b7386a9-af217a2c23054e08ff944fec;Sampled=0
-1 < x-amz-apigw-id: LpH6jEWfCYcFwFw=
-1 < x-amzn-RequestId: 7312e2aa-a02d-11e8-9c17-b5ef901f7ac8
-{"errorMessage":"[NotFound] - Avender id:invalidnot found ","errorType":"com.iwe.avenger.lambda.exception.AvengerNotFoundException","stackTrace":["com.iwe.avengers.RemoveAvengerHandler.handleRequest(RemoveAvengerHandler.java:24)","com.iwe.avengers.RemoveAvengerHandler.handleRequest(RemoveAvengerHandler.java:1)"]}
+1 < Date: Fri, 17 Aug 2018 00:41:44 GMT
+1 < x-amz-apigw-id: Lvj3UGPyCYcFeew=
+1 < x-amzn-RequestId: 50aee96f-a1b6-11e8-afc4-f51b7e9b9eb2
+{"message": "Internal server error"}
 
-22:49:30.083 karate.env system property was: null 
-22:49:30.085 request:
+21:41:44.548 status code was: 500, expected: 404, response time: 509, url: https://mrufr5vffa.execute-api.us-east-2.amazonaws.com/dev/avengers/invalid, response: {"message":"Internal server error"}
+21:41:44.569 karate.env system property was: null 
+21:41:44.574 request:
 1 > PUT https://mrufr5vffa.execute-api.us-east-2.amazonaws.com/dev/avengers/aaaa-aaaa-aaaa-aaaa
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
@@ -131,23 +129,23 @@
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
 {"name":"Hulk","secretIdentity":"Bruce banner"}
 
-22:49:30.576 response time in milliseconds: 491
+21:41:45.069 response time in milliseconds: 494
 1 < 200
 1 < Connection: keep-alive
 1 < Content-Length: 49
 1 < Content-Type: application/json
-1 < Date: Wed, 15 Aug 2018 01:49:30 GMT
-1 < x-amz-apigw-id: LpH6oGRhCYcFfgw=
-1 < x-amzn-RequestId: 736325f6-a02d-11e8-a7e7-63c38a5dfcd6
+1 < Date: Fri, 17 Aug 2018 00:41:44 GMT
+1 < x-amz-apigw-id: Lvj3ZGNFCYcFjzQ=
+1 < x-amzn-RequestId: 5100b2e8-a1b6-11e8-aa64-e77f1afadb9a
 {
   "id" : ,
   "name" : ,
   "secretIdentity" : 
 }
 
-22:49:30.577 json parsing failed, response data type set to string: net.minidev.json.parser.ParseException: Unexpected character (}) at position 48.
-22:49:30.585 karate.env system property was: null 
-22:49:30.588 request:
+21:41:45.069 json parsing failed, response data type set to string: net.minidev.json.parser.ParseException: Unexpected character (}) at position 48.
+21:41:45.077 karate.env system property was: null 
+21:41:45.081 request:
 1 > PUT https://mrufr5vffa.execute-api.us-east-2.amazonaws.com/dev/avengers/aaaa-aaaa-aaaa-aaaa
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
@@ -157,28 +155,28 @@
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
 {"name":"Hulk","secretIdentity":"Bruce banner"}
 
-22:49:31.094 response time in milliseconds: 505
+21:41:45.575 response time in milliseconds: 494
 1 < 200
 1 < Connection: keep-alive
 1 < Content-Length: 49
 1 < Content-Type: application/json
-1 < Date: Wed, 15 Aug 2018 01:49:30 GMT
-1 < x-amz-apigw-id: LpH6tHesiYcFogQ=
-1 < x-amzn-RequestId: 73b2cc27-a02d-11e8-a4bc-3d2dadd220c5
+1 < Date: Fri, 17 Aug 2018 00:41:45 GMT
+1 < x-amz-apigw-id: Lvj3eFXYiYcFWXQ=
+1 < x-amzn-RequestId: 514e0f26-a1b6-11e8-990d-0d909c2bf409
 {
   "id" : ,
   "name" : ,
   "secretIdentity" : 
 }
 
-22:49:31.094 json parsing failed, response data type set to string: net.minidev.json.parser.ParseException: Unexpected character (}) at position 48.
-22:49:31.095 status code was: 200, expected: 404, response time: 505, url: https://mrufr5vffa.execute-api.us-east-2.amazonaws.com/dev/avengers/aaaa-aaaa-aaaa-aaaa, response: {
+21:41:45.575 json parsing failed, response data type set to string: net.minidev.json.parser.ParseException: Unexpected character (}) at position 48.
+21:41:45.576 status code was: 200, expected: 404, response time: 494, url: https://mrufr5vffa.execute-api.us-east-2.amazonaws.com/dev/avengers/aaaa-aaaa-aaaa-aaaa, response: {
   "id" : ,
   "name" : ,
   "secretIdentity" : 
 }
-22:49:31.103 karate.env system property was: null 
-22:49:31.105 request:
+21:41:45.584 karate.env system property was: null 
+21:41:45.587 request:
 1 > POST https://mrufr5vffa.execute-api.us-east-2.amazonaws.com/dev/avengers
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
@@ -188,18 +186,18 @@
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
 {"secretIdentity":"Steve Rogers"}
 
-22:49:31.685 response time in milliseconds: 580
+21:41:46.176 response time in milliseconds: 588
 1 < 400
 1 < Connection: keep-alive
 1 < Content-Length: 35
 1 < Content-Type: application/json
-1 < Date: Wed, 15 Aug 2018 01:49:31 GMT
-1 < x-amz-apigw-id: LpH6zEnYCYcFl4w=
-1 < x-amzn-RequestId: 7408dbe0-a02d-11e8-aa1b-cbb017b87f43
+1 < Date: Fri, 17 Aug 2018 00:41:46 GMT
+1 < x-amz-apigw-id: Lvj3kHoqiYcF3Ng=
+1 < x-amzn-RequestId: 51a66890-a1b6-11e8-b619-37e2f23ab664
 {"message": "Invalid request body"}
 
-22:49:31.693 karate.env system property was: null 
-22:49:31.698 request:
+21:41:46.187 karate.env system property was: null 
+21:41:46.191 request:
 1 > POST https://mrufr5vffa.execute-api.us-east-2.amazonaws.com/dev/avengers/aaaa-aaaa-aaaa-aaad
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
@@ -209,21 +207,37 @@
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
 {"secretIdentity":"Steve Rogers"}
 
-22:49:32.193 response time in milliseconds: 495
+21:41:46.708 response time in milliseconds: 516
 1 < 403
 1 < Connection: keep-alive
 1 < Content-Length: 42
 1 < Content-Type: application/json
-1 < Date: Wed, 15 Aug 2018 01:49:32 GMT
-1 < x-amz-apigw-id: LpH64HgNCYcFnzA=
+1 < Date: Fri, 17 Aug 2018 00:41:46 GMT
+1 < x-amz-apigw-id: Lvj3qGPSiYcFxxg=
 1 < x-amzn-ErrorType: MissingAuthenticationTokenException
-1 < x-amzn-RequestId: 745aa52d-a02d-11e8-91f8-1702f47d9339
+1 < x-amzn-RequestId: 51fb180e-a1b6-11e8-aae0-bdcbaf97659e
 {"message":"Missing Authentication Token"}
 
-22:49:32.201 karate.env system property was: null 
-22:49:32.203 request:
+21:41:46.716 karate.env system property was: null 
+21:41:46.717 request:
 1 > GET https://mrufr5vffa.execute-api.us-east-2.amazonaws.com/dev/avengers/invalid
 1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: mrufr5vffa.execute-api.us-east-2.amazonaws.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
+
+21:41:47.276 response time in milliseconds: 558
+1 < 500
+1 < Connection: keep-alive
+1 < Content-Length: 36
+1 < Content-Type: application/json
+1 < Date: Fri, 17 Aug 2018 00:41:47 GMT
+1 < x-amz-apigw-id: Lvj3vGfVCYcFsdQ=
+1 < x-amzn-RequestId: 524d0908-a1b6-11e8-aed4-45e1a3daa639
+{"message": "Internal server error"}
+
+21:41:47.277 status code was: 500, expected: 404, response time: 558, url: https://mrufr5vffa.execute-api.us-east-2.amazonaws.com/dev/avengers/invalid, response: {"message":"Internal server error"}
+ > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
 1 > Host: mrufr5vffa.execute-api.us-east-2.amazonaws.com
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
